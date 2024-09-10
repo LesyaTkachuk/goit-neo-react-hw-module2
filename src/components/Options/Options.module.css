@@ -1,0 +1,36 @@
+.container {
+  display: flex;
+  margin-bottom: 30px;
+}
+
+.button {
+  border-radius: 10px;
+  border: 1px solid transparent;
+  padding: 10px 30px;
+  font-size: 1.3em;
+  font-weight: 600;
+  color: #ecf3d0;
+  font-family: inherit;
+  background-color: #085b51;
+  min-width: 150px;
+  cursor: pointer;
+  transition: background-color, box-shadow 0.35s;
+}
+
+.button:hover {
+  background-color: #053b35;
+  box-shadow: 0 0 0 1px #2e2d24;
+}
+
+.button:not(:last-child) {
+  margin-right: 10px;
+}
+
+.reset {
+  background-color: #0e3542;
+  color: #f8f2b5;
+}
+
+.reset:hover {
+  background-color: #092731;
+}

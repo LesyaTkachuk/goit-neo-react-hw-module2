@@ -1,0 +1,13 @@
+#root {
+  width: 100%;
+  padding: 3rem;
+  text-align: center;
+  background-color: beige;
+}
+
+.wrapper {
+  width: fit-content;
+  margin: 0 auto;
+}
+
+
