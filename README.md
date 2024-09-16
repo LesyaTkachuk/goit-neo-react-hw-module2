@@ -9,5 +9,7 @@ Currently, two official plugins are available:
 
 
 To run the project in development mode:
+
   npm install
+  
   npm run dev

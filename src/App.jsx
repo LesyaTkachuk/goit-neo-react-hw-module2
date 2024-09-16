@@ -12,12 +12,13 @@ function App() {
     neutral: 0,
     bad: 0,
   };
+
   const [feedbackCount, setFeedbackCount] = useState(() => {
     const savedFeedback = window.localStorage.getItem("feedback");
     if (savedFeedback) {
       return JSON.parse(savedFeedback);
     }
-    return 0;
+    return initialState;
   });
 
   const { good, neutral, bad } = feedbackCount;
@@ -54,7 +55,7 @@ function App() {
           positivePercentage={Math.round((good / totalFeedback) * 100)}
         />
       ) : (
-        <Notification />
+        <Notification message="No feedback given" />
       )}
     </div>
   );
